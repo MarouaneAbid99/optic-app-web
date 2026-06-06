@@ -4,6 +4,7 @@ import { Toaster } from 'react-hot-toast';
 import AuthGuard from './components/AuthGuard';
 import Layout from './components/Layout';
 import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import ClientsPage from './pages/ClientsPage';
 import ClientDetailPage from './pages/ClientDetailPage';
@@ -24,6 +25,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route element={<AuthGuard />}>
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />

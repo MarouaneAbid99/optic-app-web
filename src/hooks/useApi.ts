@@ -3,6 +3,7 @@ import api from '../lib/axios';
 const apiClient = {
   // Auth
   login: (data: { email: string; password: string }) => api.post('/auth/login', data),
+  register: (data: { fullName: string; email: string; password: string; role?: string }) => api.post('/auth/register', data),
   me: () => api.get('/auth/me'),
 
   // Clients

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Eye, EyeOff } from 'lucide-react';
 import toast from 'react-hot-toast';
 import apiClient from '../hooks/useApi';
@@ -83,6 +83,13 @@ export default function LoginPage() {
               {loading ? 'Connexion...' : 'Se connecter'}
             </button>
           </form>
+
+          <p className="text-center text-sm text-gray-600 mt-4">
+            Pas encore inscrit?{' '}
+            <Link to="/register" className="text-blue-600 hover:text-blue-700 font-semibold">
+              S'inscrire
+            </Link>
+          </p>
         </div>
       </div>
     </div>
