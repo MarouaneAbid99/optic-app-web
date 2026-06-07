@@ -11,6 +11,7 @@ import ClientDetailPage from './pages/ClientDetailPage';
 import PrescriptionsPage from './pages/PrescriptionsPage';
 import ProductsPage from './pages/ProductsPage';
 import InventoryPage from './pages/InventoryPage';
+import SuppliersPage from './pages/SuppliersPage';
 import OrdersPage from './pages/OrdersPage';
 import OrderDetailPage from './pages/OrderDetailPage';
 import InsurancePage from './pages/InsurancePage';
@@ -36,6 +37,7 @@ export default function App() {
               <Route path="/prescriptions" element={<PrescriptionsPage />} />
               <Route path="/products" element={<ProductsPage />} />
               <Route path="/inventory" element={<InventoryPage />} />
+              <Route path="/suppliers" element={<SuppliersPage />} />
               <Route path="/orders" element={<OrdersPage />} />
               <Route path="/orders/:id" element={<OrderDetailPage />} />
               <Route path="/insurance" element={<InsurancePage />} />

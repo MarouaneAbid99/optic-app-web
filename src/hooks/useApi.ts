@@ -25,6 +25,13 @@ const apiClient = {
   updateProduct: (id: number, data: object) => api.put(`/products/${id}`, data),
   deleteProduct: (id: number) => api.delete(`/products/${id}`),
 
+  // Suppliers
+  getSuppliers: (params?: object) => api.get('/suppliers', { params }),
+  getSupplier: (id: number) => api.get(`/suppliers/${id}`),
+  createSupplier: (data: object) => api.post('/suppliers', data),
+  updateSupplier: (id: number, data: object) => api.put(`/suppliers/${id}`, data),
+  deleteSupplier: (id: number) => api.delete(`/suppliers/${id}`),
+
   // Orders
   getOrders: (params?: object) => api.get('/orders', { params }),
   getOrder: (id: number) => api.get(`/orders/${id}`),
