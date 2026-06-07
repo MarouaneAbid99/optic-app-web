@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import {
-  LayoutDashboard, Users, Eye, Package, Boxes, Truck,
+  LayoutDashboard, Users, Eye, Package, Boxes, Truck, BarChart3,
   ShoppingCart, FileText, Settings, X,
 } from 'lucide-react';
 import clsx from 'clsx';
@@ -12,6 +12,7 @@ const NAV = [
   { to: '/products', label: 'Produits', icon: Package },
   { to: '/inventory', label: 'Stocks', icon: Boxes },
   { to: '/suppliers', label: 'Fournisseurs', icon: Truck },
+  { to: '/reports/inventory', label: 'Rapports', icon: BarChart3 },
   { to: '/orders', label: 'Commandes', icon: ShoppingCart },
   { to: '/insurance', label: 'Assurances', icon: FileText },
   { to: '/settings', label: 'Paramètres', icon: Settings },
