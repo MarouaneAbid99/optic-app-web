@@ -10,6 +10,7 @@ import ClientsPage from './pages/ClientsPage';
 import ClientDetailPage from './pages/ClientDetailPage';
 import PrescriptionsPage from './pages/PrescriptionsPage';
 import ProductsPage from './pages/ProductsPage';
+import InventoryPage from './pages/InventoryPage';
 import OrdersPage from './pages/OrdersPage';
 import OrderDetailPage from './pages/OrderDetailPage';
 import InsurancePage from './pages/InsurancePage';
@@ -34,6 +35,7 @@ export default function App() {
               <Route path="/clients/:id" element={<ClientDetailPage />} />
               <Route path="/prescriptions" element={<PrescriptionsPage />} />
               <Route path="/products" element={<ProductsPage />} />
+              <Route path="/inventory" element={<InventoryPage />} />
               <Route path="/orders" element={<OrdersPage />} />
               <Route path="/orders/:id" element={<OrderDetailPage />} />
               <Route path="/insurance" element={<InsurancePage />} />
